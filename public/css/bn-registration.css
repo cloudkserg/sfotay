@@ -538,6 +538,6 @@ input.bn-text-input.parsley-error {
 }
 /* Select (end) */
 
-img { width: 100%; 
-	margin: 20px;
-  }
+img {
+    width: 100%;
+}
