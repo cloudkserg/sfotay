@@ -13,7 +13,9 @@
 </head>
 
 <body>
-    <img src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->errorCorrection('H')->size('500')->generate($session->id . '////' . $session->email .  '////' . $session->phone)); !!}" />
+    <div id="wrapper">
+        <img src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->errorCorrection('H')->size('500')->generate($session->id . '////' . $session->email .  '////' . $session->phone)); !!}" />
+    </div>
 </body>
 
 </html>

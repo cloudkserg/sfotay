@@ -13,25 +13,27 @@
 </head>
 
 <body>
-    <section class="bn-registration">
-        <h2 class="bn-registration-title">Регистрация фотосессии</h2>
-        <form class="bn-form js-validate-form" action="{{route('session.generate')}}" method="post">
-            @csrf
-            <div class="bn-form-row">
-                <fieldset class="bn-fieldset">
-                    <div class="bn-fieldset-row">
-                        <input class="bn-text-input" type="email" name="email" placeholder="Эл. почта" required>
-                    </div>
-                    <div class="bn-fieldset-row">
-                        <input class="bn-text-input" type="text" name="phone" placeholder="Телефон (не обязательно)">
-                    </div>
-                </fieldset>
-            </div>
-            <div class="bn-form-row">
-                <button class="bn-btn bn-btn--primary" type="submit">Получить qr-код</button>
-            </div>
-        </form>
-    </section>
+    <div id="wrapper">
+        <section class="bn-registration">
+            <h2 class="bn-registration-title">Регистрация фотосессии</h2>
+            <form class="bn-form js-validate-form" action="{{route('session.generate')}}" method="post">
+                @csrf
+                <div class="bn-form-row">
+                    <fieldset class="bn-fieldset">
+                        <div class="bn-fieldset-row">
+                            <input class="bn-text-input" type="email" name="email" placeholder="Эл. почта" required>
+                        </div>
+                        <div class="bn-fieldset-row">
+                            <input class="bn-text-input" type="text" name="phone" placeholder="Телефон (не обязательно)">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="bn-form-row">
+                    <button class="bn-btn bn-btn--primary" type="submit">Получить qr-код</button>
+                </div>
+            </form>
+        </section>
+    </div>
 
     <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
     <script type="text/javascript" src="js/vendor/icheck.min.js"></script>
