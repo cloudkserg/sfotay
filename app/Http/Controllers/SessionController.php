@@ -25,7 +25,7 @@ class SessionController extends Controller
         $session->phone = $phone;
         $session->ip = $request->getClientIp();
         $session->saveOrFail();
-        echo \QrCode::errorCorrection('H')->size('500')->generate($session->id . '////' . $email .  '////' . $phone);
+return view('session/generateQr', ['session' => $session]);
     }
 
 }

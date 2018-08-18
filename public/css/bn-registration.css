@@ -9,6 +9,8 @@
     font-weight: 400;
 }
 
+
+
 @font-face {
     font-family: "ProximaNova";
     src: url("../fonts/proximanova/bold/proximanova-bold.eot");
@@ -535,3 +537,7 @@ input.bn-text-input.parsley-error {
   padding-left: 25px;
 }
 /* Select (end) */
+
+img { width: 100%; 
+	margin: 20px;
+  }
