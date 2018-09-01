@@ -9,6 +9,8 @@
     font-weight: 400;
 }
 
+
+
 @font-face {
     font-family: "ProximaNova";
     src: url("../fonts/proximanova/bold/proximanova-bold.eot");
@@ -21,8 +23,8 @@
 }
 
 #wrapper {
-    width: 782px;
-    padding: 40px;
+    max-width: 300px;
+    padding: 20px;
     margin-left: auto;
     margin-right: auto;
     background: #fff;
@@ -535,3 +537,7 @@ input.bn-text-input.parsley-error {
   padding-left: 25px;
 }
 /* Select (end) */
+
+img {
+    width: 100%;
+}
